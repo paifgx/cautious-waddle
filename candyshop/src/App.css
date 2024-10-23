@@ -1,0 +1,40 @@
+.nav-icon {
+    width: 2.5rem;
+    height: auto;
+    flex-shrink: 0;
+
+    & path {
+        fill: black;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 2.5rem;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: black;
+
+    &.nav-link span {
+        display: inline-block;
+        width: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        transition: width 0.5s ease-in-out;
+    }
+
+    &.nav-link:hover span {
+        width: 100%;
+    }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Node.js Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "forwardPorts": [5173],
+  "customizations": {
+    "vscode": {
+      "extensions": ["dbaeumer.vscode-eslint"]
+    },
+    "settings": {
+      "terminal.integrated.defaultProfile.linux": "/bin/bash"
+    }
+  }
+}
